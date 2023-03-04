@@ -11,8 +11,6 @@
         "init:gitignore:custom": "echo \"dist\" >> .gitignore",
         "test": "npm-run-all test:*",
         "test:html": "html-validate src/*.html",
-
-        
         "build": "npm-run-all build:* test",
         "build:clean": "rimraf dist && mkdirp dist",
         "build:copy": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" dist",
@@ -49,6 +47,6 @@
         "stylelint-scss": "^4.3.0"
     },
     "dependencies": {
-        "json-server": "^0.17.1"
+        "json-server": "^0.17.2"
     }
 }
